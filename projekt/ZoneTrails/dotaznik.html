@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Obrázky/Logo.png">
+    <link rel="stylesheet" href="dotaznik.css">
+    <script src="Zone.js"></script>
+    <title>Dotazník spokojenosti</title>
+</head>
+<body>
+    <body>
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="Zone.html">Na hlavní stránku</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Menu</button>
+          </div>
+        
+        <h1>Dotazník spokojenosti</h1>
+        <!-- Create Form -->
+        <form id="form">
+     
+            <!-- Details -->
+            <div class="form-control">
+                <label for="name" id="label-name">
+                    Jméno
+                </label>
+     
+                <!-- Input Type Text -->
+                <input type="text" id="name"
+                       placeholder="Napište své jméno" />
+            </div>
+     
+            <div class="form-control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+     
+                <!-- Input Type Email-->
+                <input type="email" id="email"
+                       placeholder="Napište váš email" />
+            </div>
+     
+            <div class="form-control">
+                <label for="age" id="label-age">
+                    Věk
+                </label>
+     
+                <!-- Input Type Text -->
+                <input type="text" id="age"
+                       placeholder="Napište váš věk" />
+            </div>
+     
+            <div class="form-control">
+                <label for="role" id="label-role">
+                    Vyberte Vámi vybraný balíček
+                </label>
+     
+                <!-- Dropdown options -->
+                <select name="role" id="role">
+                    <option value="student">Balíček BASIC</option>
+                    <option value="intern">Balíček PROFESSIONAL</option>
+                    <option value="professional">Balíček LEGENDAY</option>
+                </select>
+            </div>
+     
+            <div class="form-control">
+                <label class="napis">
+                    Byl jste spokojen/á s našimi službami
+                </label>
+     
+                <!-- Input Type Radio Button -->
+                <label for="recommed-1">
+                    <input type="radio" id="recommed-1"
+                           name="recommed">Jsem spokojen/á
+                      </input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio" id="recommed-2"
+                           name="recommed">Neutrální
+                      </input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio" id="recommed-3"
+                           name="recommed">Nejsem spokojen/á
+                      </input>
+                </label>
+            </div>
+     
+            <div class="form-control">
+                <label class="napis">S čím jste spokojeni
+                </label>
+                <!-- Input Type Checkbox -->
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">Webové stránky
+                      </input>
+                  </label>
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" name="inp">Personál
+                      </input>
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" name="inp">Zabezpečení
+                      </input>
+                </label>
+                <label for="inp-5">
+                    <input type="checkbox" name="inp">Délka balíčku
+                      </input>
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp">Přístup k Vám
+                      </input>
+            </div>
+     
+            <div class="form-control">
+                <label for="comment">
+                    Chcete něco doplnit?
+                </label>
+
+                <!-- multi-line text input control -->
+                <textarea name="comment" id="comment">
+                </textarea>
+            </div>
+     
+            <!-- Multi-line Text Input Control -->
+            <button class="tlacitko" type="submit" value="submit">
+                Odeslat
+            </button>
+        </form>
+    </body>
+</body>
+</html>

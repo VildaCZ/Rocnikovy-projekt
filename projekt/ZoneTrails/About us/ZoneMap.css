@@ -1,0 +1,399 @@
+
+body{
+   margin:0;
+   padding:0;
+   font-family: 'Roboto', sans-serif;
+   position:relative;
+   background-color: rgba(30,30,30,1);
+   font-family: 'Neucha', cursive !important;
+}
+.header{
+   width:100%;
+   height:500px;
+   opacity:.8;;
+   background-image:url('../Obrázky/chernobyl.webp');
+   background-size:cover;
+   filter:blur(3px)brightness(65%);
+}
+.container{
+   width:100%;
+}
+.container h1{
+   font-size:50px
+}
+.about{
+   padding:5% 0;
+   width:100%;
+   height:auto;
+}
+.about .left{
+   padding:2% 0;
+   float: left;
+   width:50%;
+   display:inline-block;
+   color: #fff;
+}
+.about .right{
+   width:50%;
+   display:inline-block;
+}
+.about .right img{
+   width:100%;
+   border-radius: 5%;
+}
+.about .left h1{
+   text-align:center;
+   color:#F3800F;;
+   margin:0 0 10px 0;
+}
+
+.about .left hr{
+   width:20%;
+   border-top:2px solid #F3800F;
+   border-bottom:none;
+}
+.about .left p{
+   font-size:1rem;
+   margin:40px auto;
+   width:80%
+}
+.left{
+   width:50%;
+
+   display:inline-block;
+}
+.left img{
+   width:100%;
+}
+
+
+.team{
+   width:90%;
+   margin:auto;
+   padding:5% 5%;
+   overflow:hidden;
+}
+.team h1{
+   text-align:center;
+   color:#F3800F;
+   
+}
+
+.team h1 hr{
+   width:15%;
+   border-top:2px solid #F3800F;
+   background-color:transperant;
+   border-bottom:none;
+   margin-bottom:50px;
+}
+.team .card{
+   padding-bottom:20px;
+   padding-top:20px;
+   position:relative;
+   min-width:20%;
+   height:500px !important;
+   height:auto;
+   background-color:#fff;
+   display:inline-block;
+   margin:40px 6.5%;
+   text-align:center;
+   border-radius: 3%;
+}
+.card .circle-container{
+   position:relative;
+   width:250px;
+   height:250px;
+   border:none;
+   margin:auto;
+}
+.circle-container h1{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   margin:0;
+   font-size:60px;
+}
+
+.team .card h2{
+   text-align:center;
+   margin:30px 0 0 0;
+}
+.team .card h4{
+   text-align:center;
+   margin:10px 0 0 0;
+}
+.team .card p{
+   width:250px;
+   margin:30px auto;
+   text-align:center;
+
+}
+
+/* media */
+@media(max-width:1200px){
+   .mission .right p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+   .about .left p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+}
+
+@media(max-width:992px){
+   .about .left{
+   width:100%; 
+}
+   .about .right{
+   width:100%; 
+}
+      .mission .left{
+   width:100%; 
+}
+   .mission .right{
+   width:100%; 
+}
+   .team .card{ 
+   width:40%;
+}   
+}
+
+@media(max-width:768px){
+      .team .card{ 
+   width:100%;
+} 
+   nav{
+      height:80px;
+   }
+}
+
+    /* Header alter. */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      z-index: 1;
+    }
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: #F3800F;
+      text-decoration: none;
+    } 
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: rgba(30,30,30,1);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 28px;
+      position: fixed;
+      z-index: 1;
+    }
+    .openbtn:hover {
+      background-color: #F3800F;
+    }
+    #main {
+      transition: margin-left .5s;
+    }
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+/*footer*/
+  .footer body{
+    margin:0;
+    overflow-x:hidden;
+    } 
+    .footer{
+    padding:30px 0px;
+    text-align:center;
+    } 
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    } 
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }  
+    .footer .row a:hover{
+    color:#fff;
+    } 
+    .footer .row ul{
+    width:100%;
+    } 
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    } 
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    } 
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    border-radius: 10%;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+        /*button */ 
+        section {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .testing {
+            display: block;
+            position: relative;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-top: 40px;
+            padding: 8px 30px;
+            font-size: .75em;
+            letter-spacing: .35em;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all .2s ease; 
+            border-radius: 5px;
+            color: black;
+            text-decoration: none !important;
+            &:before, 
+            &:after {
+              content: 'Více';
+              position: absolute;
+                top: 0;
+                left: 0;
+              padding: 8px 0;
+              width: 100%;
+              -webkit-clip: rect(0px, 0px, 0px, 0px);
+              clip: rect(0px, 0px, 0px, 0px);
+              background: #CD7F32;
+              color: #000;
+            }
+            
+            &:before {
+              left: -3px;
+              top: -2px;
+              text-shadow: 2px 0 black;
+              box-shadow: 2px 0 black;
+            }
+          
+            &:after {
+              left: 2px;
+              bottom: -2px;
+              text-shadow: -1px 0 black;
+              box-shadow: -1px 0 black
+            }
+          
+            &:hover {
+              background: #CD7F32;
+              color: black;
+            }
+          
+            &:hover:before {
+                animation: glitch-test 1.5s infinite linear alternate-reverse;
+            }
+            
+            &:hover:after {
+                animation: glitch-test 2s infinite linear alternate;
+            }
+          
+        }
+        
+        @keyframes glitch-test {
+          0% {
+            clip: rect(-3px, 600px, 0px, 0px);
+          }
+          5.88235% {
+            clip: rect(0px, 600px, 0px, 0px);
+          }
+          11.76471% {
+            clip: rect(-3px, 600px, 0px, 0px);
+          }
+          17.64706% {
+            clip: rect(-3px, 600px, 0px, 0px);
+          }
+          23.52941% {
+            clip: rect(100px, 600px, 100px, 0px);
+          }
+          29.41176% {
+            clip: rect(0px, 600px, 600px, 0px);
+          }
+          35.29412% {
+            clip: rect(100px, 600px, 0px, 0px);
+          }
+          41.17647% {
+            clip: rect(0px, 600px, 600px, 0px);
+          }
+          47.05882% {
+            clip: rect(100px, 600px, 0px, 0px);
+          }
+          52.94118% {
+            clip: rect(-3px, 600px, 0px, 0px);
+          }
+          58.82353% {
+            clip: rect(100px, 450px,100px, 0px);
+          }
+          64.70588% {
+            clip: rect(0px, 450px, 0px, 0px);
+          }
+          70.58824% {
+            clip: rect(100px, 450px, 100px, 0px);
+          }
+          76.47059% {
+            clip: rect(0px, 450px, 0px, 0px);
+          }
+          82.35294% {
+            clip: rect(0px, 450px, 0px, 0px);
+          }
+          88.23529% {
+            clip: rect(0px, 450px, 0px, 0px);
+          }
+          94.11765% {
+            clip: rect(0px, 450px, 0px, 0px);
+          }
+          100% {
+            clip: rect(0px, 450px, 0px, 0px);
+          }
+        }
